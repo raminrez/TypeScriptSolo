@@ -1,0 +1,15 @@
+.post {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.post:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.post h4 {
+  margin-bottom: 4px;
+}
