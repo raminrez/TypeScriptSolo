@@ -16,7 +16,7 @@ type post = {
 
 const Posts = props => {
   useEffect(() => {
-    props.getAllPosts();
+    props.getAllPosts(); // eslint-disable-next-line
   }, []);
 
   return (

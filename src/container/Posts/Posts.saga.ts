@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
 import {
   POSTS_FETCH_SUCCEEDED,
