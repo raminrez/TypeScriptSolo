@@ -5,3 +5,7 @@ export const POSTS_FETCH_FAILED = "POSTS/POSTS_FETCH_FAILED";
 export const POSTS_ADD = "POSTS/POSTS_ADD";
 export const POSTS_EDIT = "POSTS/POSTS_EDIT";
 export const POSTS_REMOVE = "POSTS/POSTS_REMOVE";
+
+export const fetchAllPosts = () => ({
+  type: POSTS_FETCH_REQUESTED
+});
