@@ -27,13 +27,14 @@ const reducer = (state = initialState, action) => {
 
     case POSTS_FETCH_SUCCEEDED:
       return produce(state, draft => {
-        draft.posts.push(...action.payload.posts);
+        draft.posts = action.payload.posts;
         draft.isFetching = false;
         draft.error = null;
       });
 
     case POSTS_FETCH_FAILED:
       return produce(state, draft => {
+        draft.posts = [];
         draft.isFetching = false;
         draft.error = action.payload.error;
       });
