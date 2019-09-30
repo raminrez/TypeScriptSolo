@@ -1,0 +1,10 @@
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #252525;
+  border-radius: 4px;
+}
