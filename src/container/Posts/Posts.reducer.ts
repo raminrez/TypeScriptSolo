@@ -5,13 +5,6 @@ import {
   POSTS_FETCH_FAILED
 } from "./Posts.actions";
 
-interface post {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-}
-
 const initialState = {
   posts: [],
   isFetching: false,
