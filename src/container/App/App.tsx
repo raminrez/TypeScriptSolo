@@ -1,19 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
-import axios from "axios";
 
 import Posts from "../Posts/Posts";
 
-const App: React.FC = () => {
-  useEffect(() => {
-    axios
-      .get("posts")
-      .then(response => {
-        console.log(response);
-      })
-      .catch(e => console.log("axi error", e.message));
-  }, []);
-
+const App = () => {
   return (
     <div className='App'>
       <Posts />
